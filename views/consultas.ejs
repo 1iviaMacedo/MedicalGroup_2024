@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/css/consultas.css">
+  <link rel="shortcut icon" type="image/jpg" href="logo.png">
+  <title>SP Medical Group</title>
+
+</head>
+
+<body>
+  <script>
+    var consultas = <%= consultas %>;
+  </script>
+
+  <header>
+
+    <h3 class="data">Data</h3>
+    <h3 class="profissional">Profissional</h3>
+    <a href="#"><img src="ajuda.png" class="ajuda"></a>
+  
+    <a href="inicio"><img src="btn voltar.png" class="voltar"></a>
+
+  </header>
+
+
+  <main>
+    <section>
+      <div class="rectangle">
+
+        <img src="logo.png" type="img" class="logo" height="80" width="80">
+        
+        <img src="SP Medical Group.png" class="titulo">
+  
+
+  
+      </div>
+
+      <div class="rectangle2"></div>
+      <div class="rectangle3"></div>
+      <div class="rectangle4"></div>
+
+      <div class="rectangle5">
+        <!-- Construção de loop dentro de um EJS -->
+        <% for(var i=0; i < consultas.length; i++) { %>
+          <p> <h4 class="list1"> <%= consultas[i].id %> - <%= consultas[i].data %> </h4> </p>
+          <% } %>
+      </div>
+
+      <div class="rectangle6">
+                <!-- Construção de loop dentro de um EJS -->
+                <% for(var i=0; i < consultas.length; i++) { %>
+                  <p"> <h4 class="list2"> <%= consultas[i].medico %> </h4>  </p>
+                  <% } %>
+      </div>
+
+      <div class="rectangle7"></div>
+      <div class="rectangle8"></div>
+
+    </section>
+
+  </main>
+
+  <div>
+    <img src="fundo.png" class="fundo">
+  </div>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: Helvetica;
+    }
+
+    h4 {
+      color: #ffffff;
+    }
+
+    .list1 {
+      position: absolute;
+      top: 30%;
+      left: 3%;
+    }
+
+    .list2 {
+      position: absolute;
+      top: 30%;
+      left: 3%;
+    }
+
+    #img[type="img"] {
+    border-radius: 40px;
+    position: absolute;
+  }
+
+  .logo {
+    z-index: 4;
+    width: 4%;
+    height: 80%;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    border-radius: 50%;
+  }
+
+  .fundo {
+    position: absolute;
+    width: 100%;
+  }
+
+  .rectangle {
+    width: 130rem;
+    height: 6.8rem;
+    background: #8D9277;
+    position: absolute;
+    top: 10;
+    z-index: 2;
+  }
+
+  .rectangle2 {
+    width: 130rem;
+    height: 0.13rem;
+    background: #8D9277;
+    left: 0%;
+    top: 14%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .rectangle3 {
+    width: 130rem;
+    height: 0.3rem;
+    background: #8D9277;
+    left: 0%;
+    top: 13%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .rectangle4 {
+      width: 75rem;
+      height: 25.6rem;
+      background: #C6CAC9;
+      z-index: 2;
+      left: 13%;
+      top: 23%;
+      position: absolute;
+      text-align: center;
+      opacity: 0.4;
+      border-radius: 10px;
+    }
+
+    .rectangle5 {
+      width: 30rem;
+      height: 20.6rem;
+      background: #ACAEAD;
+      z-index: 5;
+      left: 16.5%;
+      top: 27.5%;
+      position: absolute;
+
+    }
+
+    .rectangle6 {
+      width: 30rem;
+      height: 20.6rem;
+      background: #ACAEAD;
+      z-index: 5;
+      left: 52%;
+      top: 27.5%;
+      position: absolute;
+      text-align: center;
+    }
+
+    .rectangle7 {
+      width: 30rem;
+      height: 0.2rem;
+      background: #d1d1d1;
+      left: 16.5%;
+      top: 33%;
+      position: absolute;
+      z-index: 7;
+
+    }
+
+    .rectangle8 {
+      width: 30rem;
+      height: 0.2rem;
+      background: #d1d1d1;
+      left: 52%;
+      top: 33%;
+      position: absolute;
+      z-index: 7;
+    }
+
+    .titulo {
+    left: 6%;
+    width: 18%;
+    top: 30%;
+    position: absolute;
+    z-index: 3;
+  }
+
+    .data {
+      left: 29.2%;
+      top: 30%;
+      position: absolute;
+      z-index: 6;
+      color: #ffffff;
+    }
+
+    .profissional {
+      left: 63%;
+      top: 30%;
+      position: absolute;
+      z-index: 6;
+      color: #ffffff;
+    }
+
+    .exemplo1 {
+      left: 9%;
+      top: 42%;
+      position: absolute;
+      z-index: 6;
+      color: #ffffff;
+    }
+
+    .exemplo2 {
+      left: 57%;
+      top: 42%;
+      position: absolute;
+      z-index: 6;
+      color: #ffffff;
+    }
+
+    footer {
+      background-color: #3db36b;
+      color: #fff;
+      border-top: 3px solid #0f642f;
+      padding: 80px;
+    }
+
+    .ajuda {
+    position: absolute;
+    width: 3.5%;
+    left: 93.5%;
+    top: 3%;
+    z-index: 3;
+  }
+
+  .voltar {
+    position: absolute;
+    width: 3.5%;
+    left: 88.5%;
+    top: 3%;
+    z-index: 3;
+  }
+  
+    body {
+      overflow-y: hidden;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+
+</body>
+
+</html>
