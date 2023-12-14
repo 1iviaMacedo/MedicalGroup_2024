@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/jpg" href="logo.png">
+    <title>SP Medical Group</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="logo.png" type="img" class="logo" height="95" width="95">
+        </div>
+        <h1 class="titulo"> SP Medical Group </h1>
+    </header>
+
+    <div class="rectangle"></div>
+    <div class="rectangle2"></div>
+    <div class="rectangle3"></div>
+    <div class="rectangle4"></div>
+
+    <div class="senha">
+        <h3>Recuperar Senha</h3>
+    </div>
+    
+    <div>
+        <img src="médico 1.png" class="fundo">
+    </div>
+
+    <div id="usuarios">
+        <div class="email" id="email">
+            <input type="email" id="inputEmail" placeholder="Email">
+        </div>
+        <div class="enviar">
+            <button type="button" name="enviar" id="enviar" onclick="enviar()">Enviar</button>
+        </div>
+        <a href="login1"><img src="btn voltar.png" class="voltar"></a>
+    </div>
+
+    <script>
+        function enviar() {
+            var email = document.getElementById("inputEmail").value;
+
+            if (email.trim() === "") {
+                alert("Por favor, preencha o campo de e-mail.");
+            } else {
+                alert("Aguarde alguns minutos enquanto verificamos sua conta. Enviaremos uma mensagem para o seu email! :)");
+                window.location.href = "login1";
+            }
+        }
+    </script>
+
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .logo {
+        position: absolute;
+        z-index: 2;
+        left: 14%;
+        top: 4%;
+        border-radius: 50%;
+    }
+
+    .titulo {
+        color: #3F4927;
+        right: 20%;
+        position: absolute;
+        top: 17%;
+        left: 8%;
+        z-index: 2;
+    }
+
+    .rectangle {
+        width: 38rem;
+        height: 58.65rem;
+        background: #8D9277;
+        position: absolute;
+        top: -18%;
+        z-index: 1;
+    }
+
+    .rectangle2 {
+        width: 31rem;
+        height: 31rem;
+        background: #B8BF9A;
+        position: absolute;
+        top: 25%;
+        left: 3%;
+        z-index: 2;
+    }
+
+    .senha {
+        position: absolute;
+        z-index: 3;
+        color: #ffffff;
+        left: 9.7%;
+        font-size: 140%;
+        top: 30%;
+    }
+
+    .fundo {
+        position: absolute;
+        left: 30%;
+        top: -13%;
+        height: 100%;;
+        z-index: 0;
+    }
+
+    .email {
+        position: absolute;
+        z-index: 3;
+        left: 6.5%;
+        top: 40%;
+        color: #8D9277;
+    }
+
+    input[type="email"] {
+        width: 360px;
+        height: 40px;
+        background-color: #D9DDD7;
+        border-color: #D9DDD7;
+    }
+
+    .rectangle3 {
+        width: 31.5rem;
+        height: 0.5rem;
+        background: #8D9277;
+        position: absolute;
+        top: 60%;
+        left: 3%;
+        z-index: 2;
+    }
+
+    .rectangle4 {
+        width: 31.5rem;
+        height: 0.13rem;
+        background: #8D9277;
+        position: absolute;
+        top: 63%;
+        left: 3%;
+        z-index: 2;
+    }
+
+    button {
+        position: absolute;
+        z-index: 3;
+        left: 14.5%;
+        top: 50%;
+        color: #FFFFFF;
+        height: 30px;
+        width: 65px;
+        background-color: #B79D7C;
+        border-radius: 5px;
+        border-color: #B79D7C;
+    }
+
+    .voltar {
+        position: absolute;
+        width: 3.3%;
+        left: 0.5%;
+        top: 1%;
+        z-index: 3;
+    }
+
+    body {
+        overflow-y: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+</style>
+
+</body>
+
+</html>

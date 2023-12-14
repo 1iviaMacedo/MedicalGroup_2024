@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/jpg" href="logo.png">
+  <title>SP Medical Group</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+<body>
+
+
+  <!--Atalho de páginas-->
+
+  <header>
+
+    <a class="text1" href="SP Medical Group.pdf">Sobre Nós</a>
+    <a class="text2" href="#1">Consultas</a>
+    <a class="text3" href="#2">E-books</a>
+    <a class="text4" href="#3">Nossos Contatos</a>
+
+    <a href="erro"><img src="ajuda.png" class="ajuda"></a>
+
+    <a href="/logout"><img src="logout.png" class="logout"></a>
+
+  </header>
+
+  <main>
+
+
+
+    <section>
+
+      <div class="rectangle">
+
+        <img src="logo.png" type="img" class="logo" height="80" width="80">
+
+        <img src="SP Medical Group.png" class="titulo">
+
+      </div>
+
+      <div class="rectangle2"></div>
+      <div class="rectangle3"></div>
+      <div class="rectangle4"></div>
+      <div class="rectangle5"></div>
+
+      <img src="rectangle.png" class="rectangle7">
+      <img src="rectangle.png" class="rectangle8">
+      <img src="Rodapé.png" class="rectangle9">
+
+    </section>
+
+  </main>
+
+  <p></p>
+  <img src="anuncio.png" class="imagem1" id="#">
+
+  <div id="icons">
+
+
+    <img src="retângulo ícones.png" class="rectangleicons" id="1">
+
+
+    <a href="consultas"><img src="btn consultas.png" class="consultass">
+      <a href="agendar"><img src="btn agendar.png" class="agendarr">
+        <a href="erro"><img src="btn planos de saude.png" class="planoss">
+
+          <a href="consultas" class="icon1">Consultas</a>
+          <a href="agendar" class="icon2">Agendar</a>
+          <a href="erro" class="icon3">Planos de Saúde</a>
+
+  </div>
+
+  <!--pdf's dos e-books-->
+
+  <div class="ebooks">
+    <img src="Nossos E-books.png" class="titulo2" id="2">
+
+    <a href="Agendamentos.pdf"><img src="agendamento.png" class="ebook1">
+      <a href="Arte Terapia.pdf"><img src="arte terapia.png" class="ebook2">
+        <a href="Benefícios da Nutrição.pdf"><img src="nutrição.png" class="ebook3">
+
+          <img src="Guia de Agendamento.png" class="text5">
+          <img src="Arte terapia (1).png" class="text6">
+          <img src="Nutrição (1).png" class="text7">
+  </div>
+
+
+  <!--Link de acesso ao instagram-->
+
+  <div>
+    <a href="https://instagram.com/sp.medical.group?igshid=YTQwZjQ0NmI0OA=="><img src="QR_Code.png" class="qrcode"
+        id="3"></a>
+
+    <form>
+      <input type="image" src="home.png" class="home" alt="Submit" href="#">
+    </form>
+
+    <p class="text8">Email:</p>
+    <p class="text9">Telefone:</p>
+
+    <a href="" class="text10">spmedicalgroup36@gmail.com</a>
+    <a href="" class="text11">(19) 99***-****</a>
+
+    <p class="text12">Siga-nos em nossas redes sociais!</p>
+    <p class="text13">Acesse nosso instagram através do QR Code</p>
+    <p class="text14">ao lado, ou pelo link abaixo, e fique por</p>
+    <p class="text15">dentro das dicas de saúde, e lives com</p>
+    <p class="text16">nossos grandes médicos de cada área!</p>
+
+    <p class="margem1"> ╔═══━━━─── • ───━━━═══╗</p>
+    <p class="margem2"> ╚═══━━━─── • ───━━━═══╝ </p>
+    <p class="margem3"> ——————«•»—————— </p>
+  </div>
+
+  <h1 id="logado"></h1>
+
+  <button onclick="sair()">Sair</button>
+
+</body>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+  }
+
+  .imagem1 {
+    width: 90%;
+    height: 70%;
+    position: absolute;
+    top: 33%;
+    left: 5%;
+    z-index: 2;
+  }
+
+
+  #img[type="img"] {
+    border-radius: 40px;
+    position: absolute;
+  }
+
+  .logo {
+    z-index: 4;
+    width: 4%;
+    height: 80%;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    border-radius: 50%;
+  }
+
+
+  .rectangle {
+    width: 130rem;
+    height: 6.8rem;
+    background: #8D9277;
+    position: absolute;
+    top: 10;
+    z-index: 2;
+  }
+
+  .rectangle2 {
+    width: 130rem;
+    height: 0.13rem;
+    background: #8D9277;
+    left: 0%;
+    top: 14%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .rectangle3 {
+    width: 130rem;
+    height: 0.3rem;
+    background: #8D9277;
+    left: 0%;
+    top: 13%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .rectangle4 {
+    width: 130rem;
+    height: 0.3rem;
+    background: #8D9277;
+    left: 0%;
+    top: 21.65%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .rectangle5 {
+    width: 130rem;
+    height: 0.1rem;
+    background: #8D9277;
+    left: 0%;
+    top: 21%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .rectangle6 {
+    width: 77.4rem;
+    height: 25rem;
+    background: #d5d5d5;
+    z-index: 5;
+    left: 1%;
+    top: 30%;
+    position: absolute;
+  }
+
+  .rectangle7 {
+    position: absolute;
+    width: 100%;
+    top: 195%;
+  }
+
+  .rectangle8 {
+    position: absolute;
+    width: 100%;
+    top: 250%;
+  }
+
+  .rectangle9 {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 270%;
+    z-index: 0;
+  }
+
+  .consultass {
+    position: absolute;
+    width: 13%;
+    z-index: 6;
+    left: 13.2%;
+    top: 118%;
+  }
+
+  .agendarr {
+    position: absolute;
+    width: 13%;
+    z-index: 6;
+    left: 42.1%;
+    top: 118%;
+  }
+
+  .planoss {
+    position: absolute;
+    width: 13%;
+    z-index: 6;
+    left: 70.3%;
+    top: 118%;
+  }
+
+  .titulo {
+    left: 6%;
+    width: 18%;
+    top: 30%;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .titulo2 {
+    position: absolute;
+    left: 35%;
+    top: 180%;
+    z-index: 0;
+  }
+
+  .rectangleicons {
+    position: absolute;
+    width: 90%;
+    top: 110%;
+    left: 5%;
+    z-index: 0;
+  }
+
+  .icon1 {
+    position: absolute;
+    color: #d27d0e;
+    left: 17%;
+    top: 145%;
+    font-size: larger;
+    z-index: 1;
+  }
+
+  .icon2 {
+    position: absolute;
+    color: #d27d0e;
+    left: 46.5%;
+    top: 145%;
+    font-size: larger;
+    z-index: 0;
+  }
+
+  .icon3 {
+    position: absolute;
+    color: #d27d0e;
+    left: 73%;
+    top: 145%;
+    font-size: larger;
+    z-index: 0;
+  }
+
+
+  .qrcode {
+    position: absolute;
+    width: 15%;
+    left: 80%;
+    top: 275%;
+    z-index: 1;
+  }
+
+  .ajuda {
+    position: absolute;
+    width: 3.5%;
+    left: 93.5%;
+    top: 3%;
+    z-index: 3;
+  }
+
+  .logout {
+    position: absolute;
+    width: 3.5%;
+    left: 88.5%;
+    top: 3%;
+    z-index: 3;
+  }
+
+  .text1 {
+    position: absolute;
+    color: #AFAFAF;
+    top: 16.5%;
+    left: 7%;
+    font-size: 130%;
+    z-index: 0;
+  }
+
+  .text2 {
+    position: absolute;
+    color: #AFAFAF;
+    top: 16.5%;
+    left: 33%;
+    font-size: 130%;
+    z-index: 0;
+  }
+
+  .text3 {
+    position: absolute;
+    color: #AFAFAF;
+    top: 16.5%;
+    left: 58%;
+    font-size: 130%;
+    z-index: 0;
+  }
+
+  .text4 {
+    position: absolute;
+    color: #AFAFAF;
+    top: 16.5%;
+    left: 80%;
+    font-size: 130%;
+    z-index: 0;
+  }
+
+  .text5 {
+    position: absolute;
+    left: 10%;
+    top: 234%;
+    z-index: 1;
+  }
+
+  .text6 {
+    position: absolute;
+    left: 45%;
+    top: 237%;
+    z-index: 1;
+  }
+
+  .text7 {
+    position: absolute;
+    left: 80%;
+    top: 234%;
+    z-index: 1;
+  }
+
+  .text8 {
+    position: absolute;
+    font-size: 150%;
+    color: rgb(148, 146, 146);
+    left: 5%;
+    top: 283%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    z-index: 1;
+  }
+
+  .text9 {
+    position: absolute;
+    font-size: 150%;
+    color: rgb(148, 146, 146);
+    left: 5%;
+    top: 293%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    z-index: 1;
+  }
+
+  .text10 {
+    position: absolute;
+    font-size: 150%;
+    color: rgb(172, 172, 172);
+    font-size: 87%;
+    left: 5%;
+    top: 286.5%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    z-index: 1;
+  }
+
+  .text11 {
+    position: absolute;
+    font-size: 150%;
+    color: rgb(172, 172, 172);
+    font-size: 87%;
+    left: 5%;
+    top: 296.5%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    z-index: 1;
+  }
+
+  .text12 {
+    position: absolute;
+    color: steelblue;
+    background-image: linear-gradient(to bottom, rgb(255, 2, 2), rgb(255, 166, 0), rgb(255, 0, 72));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 56%;
+    top: 278%;
+    font-family: Didot, serif;
+    font-size: 120%;
+    z-index: 1;
+  }
+
+  .text13 {
+    position: absolute;
+    color: rgb(128, 126, 126);
+    left: 56.3%;
+    top: 291%;
+    font-size: small;
+    font-family: OCR A Std, monospace;
+    z-index: 1;
+  }
+
+  .text14 {
+    position: absolute;
+    color: rgb(128, 126, 126);
+    left: 56.3%;
+    top: 294%;
+    font-size: small;
+    font-family: OCR A Std, monospace;
+    z-index: 1;
+  }
+
+  .text15 {
+    position: absolute;
+    color: rgb(128, 126, 126);
+    left: 57%;
+    top: 297%;
+    font-size: small;
+    font-family: OCR A Std, monospace;
+    z-index: 1;
+  }
+
+  .text16 {
+    position: absolute;
+    color: rgb(128, 126, 126);
+    left: 57.5%;
+    top: 300%;
+    font-size: small;
+    font-family: OCR A Std, monospace;
+    z-index: 1;
+  }
+
+  .margem1 {
+    position: absolute;
+    font-size: 130%;
+    color: #929191;
+    left: 2.5%;
+    top: 276%;
+    z-index: 1;
+  }
+
+  .margem2 {
+    position: absolute;
+    font-size: 130%;
+    color: #929191;
+    left: 2.5%;
+    top: 303%;
+    z-index: 1;
+  }
+
+  .margem3 {
+    position: absolute;
+    color: #c0c0c0;
+    left: 59.5%;
+    top: 285%;
+    z-index: 1;
+  }
+
+  .home {
+    position: absolute;
+    width: 40px;
+    left: 95.5%;
+    top: 305%;
+    z-index: 0;
+  }
+
+  .ebook1 {
+    position: absolute;
+    width: 27%;
+    left: 4%;
+    top: 209%;
+    z-index: 0;
+  }
+
+  .ebook2 {
+    position: absolute;
+    width: 31%;
+    left: 34%;
+    top: 207%;
+    z-index: 0;
+  }
+
+  .ebook3 {
+    position: absolute;
+    width: 27%;
+    left: 69%;
+    top: 209%;
+    z-index: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+</style>
+
+</html>
